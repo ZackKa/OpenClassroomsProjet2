@@ -12,19 +12,16 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
+    margin: auto;
 }
 
 header, #hebergements, #recherche, #activites, footer {
     padding: 0 30px;
 }
 
-@media (min-width: 1460px){
-    header, #hebergements, #recherche, #activites, footer{
-        padding: 0 calc((100% - 1400px)/2);
-    }
-}
 
-                                        /** CASE HEADER **/
+                                            /** CASE HEADER **/
 
 header{
     display: flex;
@@ -212,7 +209,7 @@ form{
     font-weight: bold;
 }
 
-main h1{
+main h2{
     font-size: 22px;
 }
 
@@ -233,7 +230,7 @@ main h1{
     width: 31.33%;
     margin-bottom: 3%;
     max-width: 100%;
-	height: auto;    
+    height: auto;    
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 6px lightgrey;
@@ -247,7 +244,7 @@ main h1{
 #imgmarseille> .photo>.p11> img{
     width: 100%;
     object-fit: cover;
-	height: 100px;
+    height: 100px;
     border-radius: 20px 20px 0px 0px;
     padding: 2% 2% 0% 2%; 
 }
@@ -312,7 +309,7 @@ main h1{
 
 #imgpopulaire> .photo2> .p22> img{
     width: 100%;
-	height: 135px; 
+    height: 135px; 
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     padding: 3% 0% 3% 5%;
@@ -379,61 +376,61 @@ footer> div {
 
                         /** C H A R G E M E N T   D U    D E B U T **/
 .chargement {
-	width: 100%;
+    width: 100%;
     height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	animation: chargement 0s 1.2s both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: chargement 0s 1.2s both;
     position: fixed;
     background-color: var(--color-secondary);
 }
 
 .chargement .charge .loader {
-	border: 16px solid #f3f3f3;
-	border-top: 16px solid #3498db;
-	border-radius: 50%;
-	width: 250px;
-	height: 250px;
-	animation: loader 2s linear infinite;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    animation: loader 2s linear infinite;
 }
 
 @keyframes loader {
-	from { 
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+    from { 
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .chargement .bookicharge {
-	position: absolute;
-	display: flex;
-	
+    position: absolute;
+    display: flex;
+    
     
 }
 
 @keyframes chargement{
-	0%{
+    0%{
         opacity: 1;
-	}
+    }
     100%{
         opacity: 0;
     }
 }
 
 .contenuepage{
-	animation: contenuepage 1000ms 1.2s both;
+    animation: contenuepage 1000ms 1.2s both;
 }
 
 @keyframes contenuepage {
-	0%{
+    0%{
         opacity: 0;
-	}
-	100%{
+    }
+    100%{
         opacity: 1;
-	}
+    }
 }
 
                             /** F I N   C H A R G E M E N T **/
@@ -488,7 +485,7 @@ footer> div {
         display: flex;
     }
     header> nav> a{
-        border-bottom: 3px solid transparent;
+        border-bottom: 3px solid var(--color-tertiary);
         border-top: none;
         width: 50%;
     }
