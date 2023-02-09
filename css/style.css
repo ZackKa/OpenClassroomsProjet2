@@ -384,6 +384,7 @@ footer span{
 
 
                         /** C H A R G E M E N T   D U    D E B U T **/
+
 .chargement {
     width: 100%;
     height: 100%;
@@ -448,7 +449,7 @@ footer span{
 
         /** Style Tablette **/
 
-@media (max-width: 992px){
+    @media ((min-width: 768px) and (max-width: 992px)){
     #hebergements{
         flex-direction: column; 
     }
@@ -575,20 +576,11 @@ footer span{
     .bloc2> img{
         height: 100px;
     }
-    .bloc22{
-        width: 100%;
-    }
-    .bloc31, .bloc33, .bloc32, .bloc34{
-        margin: 2.5% 0;
-    }
-    
-    .bloc31> img, .bloc34> img, .bloc32> img, .bloc33> img{
-        height: 100px;
-    }
 
         /** Case Footer **/
     footer{
         flex-direction: column;
         margin: 0;
+        padding-top: 20px;
     }
 }
