@@ -448,7 +448,7 @@ footer span{
 
         /** Style Tablette **/
 
-@media ((min-width: 768px) and (max-width: 992px)){
+@media (max-width: 992px){
     #hebergements{
         flex-direction: column; 
     }
@@ -479,7 +479,7 @@ footer span{
 
         /** Style Smartphone **/
 
-@media ((min-width: 1px) and (max-width: 767px)){
+@media (max-width: 767px){
     header, #hebergements, #recherche, #activites, footer{
         width: 100%;
     }
