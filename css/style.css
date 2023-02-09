@@ -4,6 +4,7 @@
     --color-principal: #0065FC;
     --color-secondary: #DEEBFF;
     --color-tertiary: #F2F2F2;
+    --color-shadow: lightgrey;
 }
 
 *{
@@ -80,8 +81,8 @@ form{
 
 .champslieu:focus{
     outline:  none;
-    border-bottom: 1px solid #0065FC;
-    border-top: 1px solid #0065FC;
+    border-bottom: 1px solid var(--color-principal);
+    border-top: 1px solid var(--color-principal);
 }
 
 .champslieu:focus + p{
@@ -190,7 +191,9 @@ form{
                                                 /**  CASE HEBERGEMENTS  **/
 
                             /** case hebergements à marseille**/
-
+h3{
+    font-size: 16px;
+}
 .etoilegrise{
     color: var(--color-tertiary);
 }
@@ -233,7 +236,7 @@ main h2{
     height: auto;    
     background-color: white;
     border-radius: 20px;
-    box-shadow: 1px 1px 6px lightgrey;
+    box-shadow: 1px 1px 6px var(--color-shadow);
     transition: transform 500ms;
 }
 
@@ -293,7 +296,7 @@ main h2{
     align-items: center;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 1px 1px 6px lightgrey;
+    box-shadow: 1px 1px 6px var(--color-shadow);
     transition: transform 500ms;
 }
 
@@ -367,10 +370,16 @@ footer{
     background-color: var(--color-tertiary);
     padding-bottom: 20px;
     margin: 0 30px;
+    padding-top: 20px;
 }
 
 footer> div {
     flex: 1;
+}
+
+footer span{
+    font-size: 17px;
+    font-weight: bold;
 }
 
 
@@ -387,8 +396,8 @@ footer> div {
 }
 
 .chargement .charge .loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
+    border: 16px solid white;
+    border-top: 16px solid var(--color-principal);
     border-radius: 50%;
     width: 250px;
     height: 250px;
@@ -554,7 +563,7 @@ footer> div {
     }
     #imgpopulaire> .photo2{
         margin-bottom: 4%;
-        box-shadow: 1px 1px 5px 2px lightgrey;
+        box-shadow: 1px 1px 5px 2px var(--color-shadow);
     }
     #bloc1{
         flex-direction: column;
